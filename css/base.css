@@ -1,0 +1,116 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;/* 两个盒子 左右排列  input、button */
+	outline: 0;
+}
+.fr{
+	float: right;
+	font-size: 14px;
+}
+
+body{
+	background-color: #00334b;
+	color: #fff;
+}
+.container{
+	max-width: 700px;
+	margin: 0 auto;/* div居中显示 */
+
+}
+
+/* form开始 */
+/* form-> input ,button*/
+.content,button{
+	padding: 10px 0;
+	border-radius: 3px;/* 圆角 */
+	border: none;
+}
+h3{
+	text-align: center;/* 文字的居中 */
+}
+.add-task .content{
+	width:84%;
+	margin-right: 1%;
+	float: left;
+
+}
+.add-task button{
+	width:15%;
+	background-color:#0D98DA;
+	cursor: pointer;/* 鼠标移动到这出现指示链接的指针（一只手） */
+}
+.add-task button:hover{
+	background-color: blue;
+}
+/* form结束 */ 
+
+
+/* 内容框开始 task-list */
+.task-list{
+	width:100%;
+	margin-top: 10px;
+}
+
+.item-content{
+	margin-right: 380px;
+}
+.task-list .task-item{
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	color: black;
+	margin-bottom: 2px;/* 间隙 */
+}
+.task-list .task-item:hover{
+	background-color: #ddd;
+	cursor: pointer;
+}
+.item-content{
+	margin-left: 15px;
+}
+
+.fr .action{
+	color: #888;
+}
+.detail{
+	cursor: pointer;
+
+}
+.detail:hover{
+	color: black;
+}
+.delete{
+	cursor: pointer;
+}
+.delete:hover{
+	color: black;
+}
+/* 点击详情弹出框 */
+.task-detail{
+	display: none;
+	width: 300px;
+	height: 340px;
+	position: fixed;
+	background-color: #524141;
+	padding: 15px;
+	top: 100px;
+	right: calc(50vw - 150px);/* calc 指定元素的长度vw可以代替为rem，实现自适应布局 css3写法 */
+	 border-radius: 3px;
+	 color: #fff;
+}
+.detail-content,.datetime{
+	background-color: #ddd;
+	width: 100%;
+	max-height: 100px;
+	margin-bottom: 15px;
+} 
+.desc{
+	background-color: #ddd;
+	width: 100%;
+	height: 100px;
+	border: 0;
+}
+/* .detail-submit{
+	background-color: blue;
+} */

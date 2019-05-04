@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的待办</title>
+	<link href="css/normalize.css" rel="stylesheet"><!-- 消除浏览器渲染出来所有的默认样式 如：margin;0、padding:0.  在哪找？ bootcdn.cn  里面很多开源资源、插件 -->
+	<link href="css/jquery.datetimepicker.min.css" rel="stylesheet"><!-- datetimepicker日期插件。定时功能 -->
+	<link rel="stylesheet" type="text/css" href="css/base.css"> 
+</head>
+<body>
+	<div class="container">
+		<h3>我的待办</h3>
+		<form class="add-task" action="javascript: return false"><!-- form表单 --> 
+			<input type="text"  class="content">
+			<button class="addTaskSubmit">submit</button>
+		</form>  
+		<div class="task-list" >
+		</div>
+	</div>
+
+	 <div class="task-detail">
+		<input type="text"  class="detail-content">
+		<span style="font-size: 16px;color: #fff;">备注</span>
+		<textarea class="desc"></textarea>
+		<span style="font-size: 16px;color: #fff;">设置闹钟</span>
+		<input type="text"  class="datetime">
+		<button class="detail-submit">提交</button>
+		
+	</div> 
+</body>
+<script  src="js/jquery.js"></script>
+<script src="js/jquery.datetimepicker.full.js"></script>
+<script  src="js/store.js"></script><!-- store 相当于前端的一个数据库 -->
+<script  src="js/bases.js"></script>
+</html>
